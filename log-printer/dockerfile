@@ -1,0 +1,5 @@
+FROM java-parent
+
+COPY target/ /app/
+
+CMD ["java", "-jar", "/app/log-printer-0.0.1-SNAPSHOT.jar", "/logs"]

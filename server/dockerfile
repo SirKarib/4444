@@ -1,0 +1,6 @@
+FROM java-parent
+COPY target/ /app/
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "/app/example-server-0.0.1-SNAPSHOT.jar"]
